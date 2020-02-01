@@ -1098,7 +1098,7 @@ status_t Parcel::writeEmbeddedNativeHandle(const native_handle_t *handle,
 
 void Parcel::remove(size_t /*start*/, size_t /*amt*/)
 {
-    LOG_ALWAYS_FATAL("Parcel::remove() not yet implemented!");
+    ALOGE("Parcel::remove() not yet implemented!");
 }
 
 status_t Parcel::read(void* outData, size_t len) const
